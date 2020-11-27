@@ -6,8 +6,9 @@ h1, p{
   color: white;
 }
 
-.images{
+.images, .footer{
   text-align: center;
+  padding: 10px;
 }
 
 img{
@@ -16,4 +17,14 @@ img{
   height: 300px;
   margin: 5px;
   border: 3px solid grey;
+}
+
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid grey;
+  background-color: white;
+  padding: 5px;
+  color: black;
+  font-weight: bold;
 }
