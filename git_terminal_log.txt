@@ -1,0 +1,158 @@
+ironghost@SKIronGhost-HP-15-PC:~/Documents/My_Projects$ cd ..
+ironghost@SKIronGhost-HP-15-PC:~/Documents$ cd Coding_Dojo/
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo$ cd Tasks/
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks$ cd 6.git/
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git$ mkdir branch_merge
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git$ cd branch_merge/
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git init
+Initialized empty Git repository in /home/ironghost/Documents/Coding_Dojo/Tasks/6.git/branch_merge/.git/
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ touch index.html
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git branch
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git branch
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git branch -a
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git branch
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git checkout -n add_css
+error: unknown switch `n'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --guess               second guess 'git checkout <no-such-branch>' (default)
+    --overlay             use overlay mode (default)
+    -q, --quiet           suppress progress reporting
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+    -m, --merge           perform a 3-way merge with the new branch
+    --conflict <style>    conflict style (merge or diff3)
+    -d, --detach          detach HEAD at named commit
+    -t, --track           set upstream info for new branch
+    -f, --force           force checkout (throw away local modifications)
+    --orphan <new-branch>
+                          new unparented branch
+    --overwrite-ignore    update ignored files (default)
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git checkout -b add_css
+Switched to a new branch 'add_css'
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git branch
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git status
+On branch add_css
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        german_sheppard.jpg
+        husky.jpg
+        index.html
+        labrator.jpeg
+        pug.jpeg
+
+nothing added to commit but untracked files present (use "git add" to track)
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git fetch
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git branch
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git status
+On branch add_css
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        german_sheppard.jpg
+        husky.jpg
+        index.html
+        labrator.jpeg
+        pug.jpeg
+
+nothing added to commit but untracked files present (use "git add" to track)
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ rm -rf .git
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git status
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git init
+Initialized empty Git repository in /home/ironghost/Documents/Coding_Dojo/Tasks/6.git/branch_merge/.git/
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git add .
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git commit -m "Initial commit"
+[master (root-commit) 0803fc7] Initial commit
+ 5 files changed, 16 insertions(+)
+ create mode 100644 german_sheppard.jpg
+ create mode 100644 husky.jpg
+ create mode 100644 index.html
+ create mode 100644 labrator.jpeg
+ create mode 100644 pug.jpeg
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git branch}
+git: 'branch}' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git branch
+* master
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git branch add_css master
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git branch
+  add_css
+* master
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git chechout add_css
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git checkout add_css
+Switched to branch 'add_css'
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git branch
+* add_css
+  master
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git status
+On branch add_css
+nothing to commit, working tree clean
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ touch styles.css
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git status
+On branch add_css
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        styles.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git add .
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git commit -m "added a ling tag with the styles file, a div to contain the images and created the css file with the styles"
+[add_css ffc8f17] added a ling tag with the styles file, a div to contain the images and created the css file with the styles
+ 2 files changed, 26 insertions(+), 4 deletions(-)
+ create mode 100644 styles.css
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git statusOn branch add_css
+nothing to commit, working tree clean
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git checkout masterSwitched to branch 'master'
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git merge add_css
+Updating 0803fc7..ffc8f17
+Fast-forward
+ index.html | 11 +++++++----
+ styles.css | 19 +++++++++++++++++++
+ 2 files changed, 26 insertions(+), 4 deletions(-)
+ create mode 100644 styles.css
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ git status
+On branch master
+nothing to commit, working tree clean
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/branch_merge$ 
